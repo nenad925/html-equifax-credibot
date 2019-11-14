@@ -1,0 +1,108 @@
+.modal {
+  padding-right: 0 !important;
+  .close {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .modal-header {
+    border-bottom: none;
+  }
+  &.login-modal {
+    margin-top: 20%;
+    .modal-dialog {
+      max-width: 772px;
+      @include media-breakpoint-down('md') {
+        max-width: 630px;
+        margin: 0 auto;
+      }
+      .modal-body {
+        padding-left: 4.375em;
+        padding-right: 4.375em;
+        padding-bottom: 1.9375em;
+        @include media-breakpoint-down('md') {
+          .title {
+            margin-bottom: 2em;
+          }
+          padding-left: 0.9375em;
+          padding-right: 0.9375em;
+          padding-bottom: 3.625em;
+        }
+        .title {
+          margin-bottom: 3.3125em;
+        }
+        .login-cards {
+          display: flex;
+          @include media-breakpoint-down('md') {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          .credibot-card {
+            border: 1px solid $gray-200;
+            border-radius: 2px;
+            box-shadow: $box-shadow-sm;
+            padding: 3.3125em 1.875em;
+            margin-bottom: 2em;
+            @include media-breakpoint-down('md') {
+              padding: 2em;
+              .logo {
+                width: 198px;
+                margin-bottom: 1.4375em;
+              }
+            }
+            .logo {
+              width: 238px;
+              height: auto;
+              margin-bottom: 3.3125em;
+            }
+            .btn {
+              padding: 0.4375 2.1875em;
+              border: 1px solid $gray-900;
+              img {
+                width: 25px;
+                height: 31px;
+                margin-right: 0.625em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.contact-modal {
+    .modal-dialog {
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: 0;
+      .modal-content {
+        border-radius: 0;
+        // height: 100vh;
+        .modal-header {
+          padding: 0.5625em;
+        }
+        .modal-body {
+          padding: 2.5em 3em;
+          padding-top: 0;
+          .sub-text {
+            font-size: $font-size-md;
+            line-height: 24px;
+          }
+          .description {
+            font-size: $font-size-sm;
+            font-family: $font-family-OpenSans;
+          }
+        }
+      }
+      @include media-breakpoint-down('md') {
+        .modal-body {
+          padding: 2.5em 1.25em !important;
+          padding-top: 0 !important;
+          .sub-text {
+            font-size: $font-size-base !important;
+          }
+        }
+      }
+    }
+  }
+}

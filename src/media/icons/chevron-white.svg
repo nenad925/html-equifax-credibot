@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>🐼Icons/Chevron down🐼 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.6000091,7.80881629 C13.6000091,7.54879151 13.3847744,7.3333424 13.1250085,7.3333424 L6.47500057,7.3333424 C6.21523463,7.3333424 6,7.54879151 6,7.80881629 C6,7.93511404 6.05195319,8.05398251 6.14101579,8.14313387 L9.46601976,11.4714511 C9.55508236,11.5606024 9.6738325,11.6126074 9.80000453,11.6126074 C9.92617656,11.6126074 10.0449267,11.5606024 10.1339893,11.4714511 L13.4589933,8.14313387 C13.5480559,8.05398251 13.6000091,7.93511404 13.6000091,7.80881629 L13.6000091,7.80881629 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header-/-Logged-out-Copy" transform="translate(-890.000000, -92.000000)">
+            <g id="Group-3" transform="translate(807.000000, 71.000000)">
+                <g id="Stacked-Group" transform="translate(0.000000, 9.000000)">
+                    <g id="Group-4">
+                        <g id="🐼Icons/Sort-down🐼" transform="translate(77.000000, 5.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Icon54" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

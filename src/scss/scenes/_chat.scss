@@ -1,0 +1,201 @@
+.chat-page {
+  .section-chat-main {
+    padding-top: 5.5em;
+    padding-bottom: 7.125em;
+    .chat-item {
+      display: flex;
+      margin-bottom: 1.5em;
+      .chat-icon {
+        width: 75px;
+        height: 75px;
+        margin-right: 0.625em;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .chat-content {
+        width: 90%;
+        border-radius: 5px;
+        border: 1px solid $gray-200;
+        padding: 1.625em;
+        font-size: $font-size-sm;
+        font-family: $font-family-OpenSans;
+        position: relative;
+        box-shadow: $box-shadow-sm;
+        &.contact-form {
+          @include media-breakpoint-down('md') {
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            padding: 0;
+            margin-top: 3.375em;
+            .credibot-card {
+              border-radius: 5px;
+              border: 1px solid $gray-200;
+              background-color: $gray-100;
+              box-shadow: $box-shadow-sm;
+              padding: 1.25em 1.125em;
+              img {
+                width: 241px;
+                height: auto;
+                margin-bottom: 2.125em;
+                margin-top: 0.8125em;
+              }
+              .btn {
+                border: 1px solid $gray-200;
+                box-shadow: $box-shadow-sm;
+              }
+            }
+            &:before {
+              border: none;
+            }
+          }
+        }
+        .credibot-logo {
+          width: 241px;
+          height: auto;
+        }
+        &:before {
+          position: absolute;
+          content: '';
+          width: 9px;
+          height: 9px;
+          border-top: 1px solid $gray-200;
+          border-right: 1px solid $gray-200;
+          background-color: $white;
+          transform: rotate(-135deg);
+          left: -5px;
+          top: 15px;
+          z-index: 2;
+        }
+      }
+      @include media-breakpoint-down('md') {
+        .chat-icon {
+          width: 56px;
+          height: 56px;
+        }
+        .chat-content {
+          padding: 0.8125em;
+        }
+      }
+    }
+    .quiz-checkboxes {
+      @include media-breakpoint-down('md') {
+        width: 100%;
+      }
+      .select-option {
+        margin-right: 1.5em;
+        &:last-child {
+          margin-right: 0;
+        }
+        @include media-breakpoint-down('md') {
+          margin-right: 0;
+        }
+      }
+    }
+    .select-options {
+      display: flex;
+      justify-content: space-between;
+      @include media-breakpoint-down('md') {
+        display: block;
+        label {
+          width: 100%;
+        }
+      }
+      .select-option {
+        input:checked + label {
+          .quiz-answer, .quiz-number, .quiz-button {
+            background-color: $danger;
+            color: $white;
+            .danger-image {
+              display: none;
+            }
+            .white-image {
+              display: inline-block;
+            }
+          }
+        }
+        .quiz-answer {
+          border: 1px solid $danger;
+          border-radius: 3px;
+          padding: 1.8125em 0.9375em;
+          text-align: center;
+          width: 152px;
+          cursor: pointer;
+          img {
+            width: 72px;
+            height: 72px;
+            margin-bottom: 1em;
+            &.white-image {
+              display: none;
+            }
+          }
+          .text {
+            line-height: 20px;
+          }
+          @include media-breakpoint-down('md') {
+            display: flex;
+            align-items: center;
+            padding: 0.625em 1.25em;
+            width: 100%;
+            margin-bottom: 1em;
+            img {
+              width: 45px;
+              height: 45px;
+              margin-bottom: 0;
+              margin-right: 1em;
+            }
+          }
+        }
+        .quiz-number {
+          border: 1px solid $danger;
+          border-radius: 3px;
+          padding: 1.46875em 1.9375em;
+          font-size: $font-size-md;
+          line-height: 23px;
+          width: 187px;
+          text-align: center;
+          cursor: pointer;
+          @include media-breakpoint-down('md') {
+            padding: 1.5em;
+            width: 100%;
+            margin-bottom: 1em;
+          }
+        }
+        .quiz-button {
+          border-radius: 3px;
+          border: 1px solid $danger;
+          padding: 1.46875em;
+          width: 187px;
+          text-align: center;
+          font-size: $font-size-md;
+          line-height: 23px;
+          cursor: pointer;
+          @include media-breakpoint-down('md') {
+            padding: 1.5em;
+            width: 100%;
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down('md') {
+      padding-top: 2em;
+      padding-bottom: 0;
+    }
+  }
+  .section-bottom {
+    padding: 2.625em 0;
+    background-image: url('../../media/primary-background.png');
+    background-position: center;
+    background-size: cover;
+    .section-title {
+      font-size: $font-size-lg;
+      margin-bottom: 0;
+    }
+    .btn {
+      white-space: nowrap;
+    }
+  }
+}

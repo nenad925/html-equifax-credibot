@@ -1,0 +1,104 @@
+.site-footer {
+  font-family: $font-family-OpenSans;
+  background-color: $dark;
+  padding-top: 2.6875em;
+  padding-bottom: 2.625em;
+  font-size: $font-size-sm;
+  @include media-breakpoint-down('md'){
+    padding-top: 2em;
+    padding-bottom: 1.875em;
+  }
+  @include media-breakpoint-down('xs') {
+    padding-bottom: 0.4375em;
+  }
+  .footer-logo {
+    img {
+      width: 145px;
+      height: 30px;
+    }
+    margin-bottom: 1.875em;
+    @include media-breakpoint-down('md') {
+      text-align: center;
+      margin-bottom: 1.4375em;
+    }
+  }
+  .footer-bottom {
+    @include media-breakpoint-down('md') {
+      justify-content: center;
+    }
+    @include media-breakpoint-down('xs') {
+      div {
+        margin-bottom: 0.875em;
+      }
+    }
+    .footer-icons {
+      display: flex;
+      align-items: flex-end;
+      list-style: none;
+      margin-bottom: 0;
+      li {
+        margin: 0 0.4375em;
+      }
+      @include media-breakpoint-down('sm'){
+        padding-left: 0.625em;
+      }
+      @include media-breakpoint-down('xs'){
+        padding-left: 0;
+        margin-bottom: 0.875em;
+      }
+    }
+  }
+  .footer-content {
+    @include media-breakpoint-down('md') {
+      flex-wrap: wrap-reverse;
+      .footer-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    .footer-left {
+      max-width: 360px;
+      @include media-breakpoint-down('md') {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    .footer-right {
+      @include media-breakpoint-down('md'){
+        width: 100%;
+      }
+      .footer-menu {
+        padding-left: 0;
+        font-weight: $font-weight-bold;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        li {
+          position: relative;
+          margin: 0.875em;
+          a {
+            color: $white;
+            &:hover {
+              color: $light;
+            }
+          }
+          &:after {
+            height: 70%;
+            position: absolute;
+            content: "";
+            top: 5px;
+            right: -15px;
+            border-right: 1px solid $white;
+          }
+          &:last-child{
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

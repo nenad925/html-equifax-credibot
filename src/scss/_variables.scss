@@ -1,0 +1,171 @@
+$container-gutter-width: 16px;
+
+$gray-100: #F9F9FA;
+$gray-200: #E3E5E6 ;
+$gray-300: #dee2e6 ;
+$gray-400: #ced4da ;
+$gray-500: #adb5bd ;
+$gray-600: #A5ADBA ;
+$gray-700: #4D4E4E ;
+$gray-800: #43525E ;
+$gray-900: #333E48 ;
+
+$blue:    #019ed9 ;
+$indigo:  #376D9C ;
+$red:     #A20B35 ;
+$pink:    #E31615 ;
+$yellow:  #ffc107 ;
+$green:   #00C1D8 ;
+
+$colors: () ;
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "red":        $red,
+  "pink":       $pink,
+  "yellow":     $yellow,
+  "green":      $green,
+  "white":      $white,
+  "gray":       $gray-800
+), $colors);
+
+$primary:       $blue ;
+$secondary:     $indigo ;
+$success:       $green ;
+$warning:       $yellow ;
+$danger:        $red ;
+$light:         $gray-200 ;
+$dark:          #3A4752 ;
+$indigo:        $indigo ;
+$gray:          $gray-800 ;
+
+$theme-colors: () ;
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "gray":       $gray,
+  "snow":       $white,
+  "pink":       $pink
+), $theme-colors);
+
+$spacer: 1em;
+$spacers: () ;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 2),
+  6: ($spacer * 2.5),
+  7: ($spacer * 3),
+  8: ($spacer * 3.5),
+  9: ($spacer * 4),
+  10: ($spacer * 4.5),
+  11: ($spacer * 5),
+  12: ($spacer * 5.5),
+  13: ($spacer * 6),
+  14: ($spacer * 6.5),
+  15: ($spacer * 7),
+  16: ($spacer * 7.5),
+), $spacers);
+
+$body-bg:                   $white;
+$body-color:                $gray-900;
+
+$paragraph-margin-bottom:   1.75em;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1152px
+);
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-xl:                ($font-size-base * 1.5);
+$font-size-lg:                ($font-size-base * 1.3125);
+$font-size-md:                ($font-size-base * 1.125);
+$font-size-sm:                ($font-size-base * .875);
+$font-size-xs:                ($font-size-base * .75);
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2.25;
+$h3-font-size:                $font-size-base * 1.625;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.375;
+$h6-font-size:                $font-size-base * 1.125;
+
+$input-btn-padding-y:         0.25em;
+$input-btn-padding-x:         1em;
+$input-border-color:        #DBDBDB;
+$input-bg:                    $white;
+
+$btn-padding-y:               0.21875em;
+$btn-padding-x:               2.0625em;
+$btn-line-height:             2.25em;
+
+$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075);
+$btn-border-radius:           5px;
+
+
+$font-maps: (
+  'OpenSans':                            ( family: 'OpenSans',       file: 'OpenSans',               weight: 400, style: normal ),
+  'OpenSansBold':                        ( family: 'OpenSans',       file: 'OpenSans-Bold',          weight: 700, style: normal ),
+  'Sanchez':                             ( family: 'Sanchez',        file: 'Sanchez-Regular',        weight: 400, style: normal ),
+  'CircularStdBlack':                    ( family: 'Circular',       file: 'CircularStd-Black',      weight: 900, style: normal ),
+  'CircularStdBold':                     ( family: 'Circular',       file: 'CircularStd-Bold',       weight: 700, style: normal ),
+  'CircularStdBook':                     ( family: 'Circular',       file: 'CircularStd-Book',       weight: 400, style: normal ),
+);
+
+$font-weight-maps: (
+  'normal': $font-weight-normal,
+  'bold': $font-weight-bold
+);
+
+$icon-size-maps: (
+  'xl': 72px,
+  'lg': 55px,
+  'md': 47px,
+  'base': 30px,
+  'sm': 26px,
+  'xs': 23px
+);
+
+$heading-maps: (
+  'h1': ('font-size': $h1-font-size, 'letter-spacing': 0, 'line-height': 1.22),
+  'h2': ('font-size': $h2-font-size, 'letter-spacing': 0, 'line-height': 1.3),
+  'h3': ('font-size': $h3-font-size, 'letter-spacing': 0, 'line-height': 1.38),
+  'h4': ('font-size': $h4-font-size, 'letter-spacing': 0, 'line-height': 1.3),
+  'h5': ('font-size': $h5-font-size, 'letter-spacing': 0, 'line-height': 1.3),
+  'h6': ('font-size': $h6-font-size, 'letter-spacing': 0, 'line-height': 1.3)
+);
+
+$heading-extended-maps: (
+  'h3': ('font-size': $h3-font-size, 'letter-spacing': 0, 'line-height': 1.38),
+);
+
+$font-size-maps: (
+  'lg': ('font-size': $font-size-base * 1.3125, 'line-height': 1.36),
+  'md': ('font-size': $font-size-base * 1.125),
+  'base': ('font-size': $font-size-base),
+  'sm': ('font-size': $font-size-base * 0.875),
+  'xs': ('font-size': $font-size-base * 0.75)
+);
+
+$font-family-sans-serif:      Sanchez;
+$font-family-OpenSans:        OpenSans;
+$font-family-Circular:        Circular;

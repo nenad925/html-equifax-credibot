@@ -1,0 +1,77 @@
+.chart-card {
+  font-family: $font-family-Circular;
+  border: 1px solid $gray-200;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  padding: 1.5625em 2.0625em;
+  background-color: $gray-100;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media-breakpoint-down('xs') {
+    max-width: 320px;
+  }
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+    .chart-title {
+      font-size: $font-size-base * 0.9375;
+    }
+    .chart-price {
+      font-size: $font-size-xs;
+      font-weight: $font-weight-bolder;
+      display: flex;
+      align-items: flex-start;
+      color: #00ACBF;
+      span {
+        font-size: $font-size-base * 1.75;
+        line-height: 28px;
+      }
+    }
+    .circle-charts {
+      display: flex;
+      .circle-chart {
+        .progress {
+          width: 42px;
+          height: 42px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          border-radius: 42px;
+          color: #00ACBF;
+          font-weight: $font-weight-bolder;
+          font-size: $font-size-base * 0.6875;
+          background-color: transparent;
+          .progress-value {
+            div {
+              display: flex;
+              align-items: flex-start;
+              line-height: 11px;
+              small {
+                font-size: $font-size-base * 0.3125;
+              }
+            }
+          }
+          &.percent-73 {
+            background-image: url('../../media/icons/73-percent.svg');
+            background-position: center;
+            background-size: cover;
+          }
+          &.percent-24 {
+            background-image: url('../../media/icons/24-percent.svg');
+            background-position: center;
+            background-size: cover;
+          }
+        }        
+      }
+    }
+  }
+  .chart-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

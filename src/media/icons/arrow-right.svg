@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="12px" viewBox="0 0 24 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>@icon-arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M26.7269907,14.675 L21.7631851,9.675 C21.5646329,9.475 21.2668046,9.475 21.0682523,9.675 C20.8697001,9.875 20.8697001,10.175 21.0682523,10.375 L25.1385729,14.475 L3.49638056,14.475 C3.19855222,14.575 3,14.775 3,15.075 C3,15.375 3.19855222,15.575 3.49638056,15.575 L25.1385729,15.575 L21.0682523,19.675 C20.8697001,19.875 20.8697001,20.175 21.0682523,20.375 C21.1675284,20.475 21.2668046,20.475 21.4653568,20.475 C21.663909,20.475 21.7631851,20.475 21.8624612,20.375 L26.8262668,15.375 C26.8262668,15.375 26.8955536,15.3153687 26.9572296,15.2076569 C27.0332336,15.0807343 26.981369,14.9266968 26.8874664,14.8156433 C26.7780457,14.728302 26.8187714,14.7637787 26.7269907,14.675 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buttons/button-arrow-RA-1-Copy-2" transform="translate(-103.000000, -24.000000)">
+            <g id="🐼Icons/Arrow-right🐼" transform="translate(100.000000, 15.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="arrow-right" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

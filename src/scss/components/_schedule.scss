@@ -1,0 +1,91 @@
+.schedule-card {
+  font-family: $font-family-Circular;
+  border: 1px solid $gray-200;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  padding: 2.3125em 1.5em;
+  background-color: $gray-100;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media-breakpoint-down('xs') {
+    max-width: 320px;
+  }
+  input {
+    height: 55px;
+    padding: 0.5em 0.875em;
+    border: 1px solid $gray-200;
+    width: 100%;
+  }
+  label {
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    font-size: $font-size-base * 0.8125;
+    font-family: $font-family-OpenSans;
+  }
+  .calendar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.25em;
+    &:after {
+      position: absolute;
+      right: 12px;
+      top: 11px;
+      content: '';
+      background: url('../../media/icons/calendar.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 34px;
+      height: 34px;
+      z-index: 1;
+    }
+    input {
+      padding-top: 1.5625em;
+    }
+  }
+  .time {
+    position: relative;
+    margin-right: 0.5625em;
+    margin-bottom: 2.125em;
+    input {
+      padding-top: 1.5625em;
+
+    }
+  }
+  .count {
+    position: relative;
+    margin-bottom: 2.125em;
+    input {
+      padding-right: 4.25em;
+    }
+    div {
+      position: absolute;
+      right: 1px;
+      top: 1px;
+      width: 68px;
+      padding: 0.5em 0.75em;
+      background-color: $gray-200;
+      line-height: 19px;
+    }
+  }
+  .btn {
+    padding: 0.3125em 1.5em;
+    text-align: left;
+    font-weight: $font-weight-bold;
+    position: relative;
+    border-radius: 48px;
+    &:after {
+      content: '';
+      position: absolute; 
+      right: 24px;
+      top: 15px;
+      width: 30px;
+      height: 15px;
+      background-image: url('../../media/icons/arrow-right.svg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

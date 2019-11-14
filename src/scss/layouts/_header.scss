@@ -1,0 +1,185 @@
+.site-header {
+  .header-top {
+    background-color: $gray;
+    font-family: $font-family-OpenSans;
+    font-size: $font-size-sm;
+    color: $white;
+    text-align: right;
+    padding: 0.5em 1.25em;
+    display: none;
+    a {
+      color: $white;
+    }
+    @include media-breakpoint-up('lg') {
+      display: block;
+    }
+  }
+  .navbar {
+    background-image: url('../../media/danger-background.png');
+    background-size: cover;
+    background-position: right;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 1.875em;
+    border-bottom: 3px solid #E31615;
+    @include media-breakpoint-down('lg') {
+      padding-left: 1.25em;
+      padding-right: 1.25em;
+    }
+    @include media-breakpoint-down('md'){
+      background-size: 200%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    img {
+      width: 343px;
+      height: auto;
+      @include media-breakpoint-down('md'){
+        width: 282px;
+        height: auto;
+      }
+    }
+    .navbar-heading {
+      @include media-breakpoint-down('md') {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 1.25em;
+      }
+    }
+    .navbar-nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      @include media-breakpoint-down('md') {
+        margin-top: 1.1875em;
+      }
+      li {
+        .nav-link {
+          font-size: $font-size-md;
+          font-weight: $font-weight-bold;
+          font-family: $font-family-OpenSans;
+          color: $white;
+          padding: 0.625em 1em;
+          @include media-breakpoint-down('md') {
+            font-family: $font-family-sans-serif;
+            font-size: $font-size-xl;
+            font-weight: $font-weight-normal;
+            position: relative;
+            padding: 0.625em 1.25em;
+            border-top: 1px solid rgba($white, .2);
+            border-bottom: 1px solid rgba($white, .2);
+            background: url('../../media/icons/arrow-short-right.svg') no-repeat right 21px top 20px;
+            background-size: 20px 20px;
+          }
+        }
+        @include media-breakpoint-down('md') {
+          &.btn-link {
+            padding: 0 1.25em;
+          }
+        }
+        .btn {
+          @include media-breakpoint-down('md') {
+            margin: 0.75em 0;
+            margin-right: 0 !important;
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      #has-submenu {
+        @include media-breakpoint-down('md') {
+          .nav-link {
+            background: url('../../media/icons/chevron-down.svg') no-repeat right 21px top 20px;
+            background-size: 20px 20px;
+          }
+          .nav-submenu {
+            list-style: none;
+            position: relative;
+            padding: 0.625em 1.375em;
+            background-color: $gray-900;
+            .nav-item {
+              padding: 0.875em 1.375em;
+              .nav-sublink {
+                color: $white;
+                font-weight: 600;
+                z-index: 10001;
+                position: relative;
+              }
+            }
+          }
+        }
+        @include media-breakpoint-up('lg') {
+          margin-right: 1.25em;
+          background: url('../../media/icons/chevron-white.svg') no-repeat right 1px top 24px;
+          background-size: 10%;
+          >.nav-submenu {
+            display: none;
+          }
+          &:hover {
+            >.nav-submenu {
+              display: inline-block;
+            }
+          }
+          .nav-submenu {
+            list-style: none;
+            position: absolute;
+            padding-left: 0;
+            margin-left: -5.3125em;
+            background-color: $gray-900;
+            border-radius: 4px;
+            z-index: 1000;
+            .nav-item {
+              padding: 0.625em 3.125em 0.625em 1.125em;
+              &:hover {
+                background-color: #5F6A72;
+              }
+              .nav-sublink {
+                color: $white;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+    .navbar-toggler {
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      padding: 0;
+      position: relative;
+      border: none;
+      outline: none;
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+      span {
+        &:not(:last-of-type) {
+          margin-bottom: 0.375em;
+        }
+        height: 3px;
+        width: 24px;
+        background-color: $white;
+        border-radius: 2px;
+        display: block;
+        @include transition(transform .2s ease);
+      }
+      
+      &[aria-expanded="true"] {
+        span {
+          position: absolute;
+          top: 11px;
+          &:first-child {
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            visibility: hidden;
+          }
+          &:last-child {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}

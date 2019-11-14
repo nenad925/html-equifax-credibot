@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Equifax Credibot</title>
+    <link href="./app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="site">
+      <div class="chat-page">
+        <div class="site-header">
+          <div class="header-top">
+            <div>
+              Did you receive a communication about a debt you owe?
+              <a href="#" class="font-weight-bold text-underline"> Take care of your account</a>
+            </div>
+          </div>
+          <div class="navbar navbar-expand-lg">
+            <div class="navbar-heading d-flex align-items-center">
+              <a href="./index.html">
+                <img src="./media/equifax-white-logo.png" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar_main">
+              <ul class="navbar-nav ml-auto">
+                <li id="has-submenu" class="nav-item">
+                  <a href="./comparison.html" class="nav-link" id="collapse-menu" data-target="#submenu" aria-controls="submenu" data-toggle="collapse" aria-haspopup="true" aria-expanded="false">Products</a>
+                  <ul class="nav-submenu collapse" id="submenu" aria-labelledby="collapse-menu" data-parent="#has-submenu">
+                    <li class="nav-item">
+                      <a href="./comparison.html" class="nav-sublink">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./credibot-express.html" class="nav-sublink">CrediBot express</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./credibot.html" class="nav-sublink">CrediBot</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./credibot-enterprise.html" class="nav-sublink">CrediBot Enterprise</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="./features.html" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item btn-link">
+                  <button class="btn btn-snow mr-4" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+                </li>
+                <li class="nav-item btn-link">
+                  <button type="button" class="btn btn-snow" data-toggle="modal" data-target="#loginModal">Business login</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal fade contact-modal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <img src="./media/icons/close2.png" />
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="title mb-2">Get started now</h4>
+                  <p class="sub-text mb-5">Enter your details for a representative to get in touch with you.</p>
+                  <form>
+                    <div class="d-flex w-100">
+                      <div class="form-group mr-3 w-25">
+                        <label for="title">
+                          Title
+                        </label>
+                        <select name="title" class="form-control custom-select">
+                          <option>Mr</option>
+                          <option>Miss</option>
+                        </select>
+                      </div>
+                      <div class="form-group w-75">
+                        <label for="first_name">
+                          Firstname
+                        </label>
+                        <input type="text" name="first_name" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="last_name">Lastname</label>
+                      <input type="text" name="last_name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input type="tel" name="phone" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="company_name">Company name</label>
+                      <input type="text" name="company_name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="abn_acn">ABN/ACN</label>
+                      <input type="text" name="abn_acn" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="product">Product</label>
+                      <select name="product" class="form-control custom-select">
+                        <option>Credibot Express</option>
+                        <option>Credibot Enterprise</option>
+                        <option>Credibot</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="comments">Additional comments</label>
+                      <textarea type="textarea" rows="4" name="comments" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-pink btn-block">Submit for a call back</button>
+                    </div>
+                  </form>
+                  <div class="description">
+                    By submitting your details, you authorise Equifax to collect, hold, use and/or disclose your personal information for the primary purpose of contacting you in relation to the Credibot products and services, and other Equifax products and services which we consider may be of interest to you/your business, given the nature of your enquiry.  You acknowledge and agree that Equifax otherwise collects, holds, uses and/or discloses your personal information as detailed in Equifax’s Privacy Policy available at <a href="https://www.equifax.com.au/privacy" class="text-pink">www.equifax.com.au/privacy</a>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <img src="./media/icons/close2.png" />
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="title text-center">Which product would you like to login to?</h4>
+                  <div class="login-cards">
+                    <div class="credibot-card mr-lg-4">
+                      <img class="logo" src="./media/credibot-logo-express.png" />
+                      <div class="text-center">
+                        <button type="button" class="btn btn-snow text-dark">
+                          <img src="./media/icons/lock.png" />
+                          Login
+                        </button>
+                      </div>
+                    </div>
+                    <div class="credibot-card">
+                      <img class="logo" src="./media/credibot-logo.png" />
+                      <div class="text-center">
+                        <button type="button" class="btn btn-snow text-dark">
+                          <img src="./media/icons/lock.png" />
+                          Login
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-chat-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="chat-item">
+                  <div class="chat-icon">
+                    <img src="./media/icons/chat.png" />
+                  </div>
+                  <div class="chat-content">
+                    Hi, I’m CrediBot, I can help you choose the right product for your organisation.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="chat-item">
+                  <div class="chat-icon">
+                    <img src="./media/icons/chat.png" />
+                  </div>
+                  <div class="chat-content">
+                    I’ll need to know a little more… <br/>
+                    <strong>What type of organisation do you work for?</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-lg-3 mb-lg-9">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-9">
+                <div class="text-muted font-size-sm">Select an option below</div>
+                <div class="select-options">
+                  <div class="select-option">
+                    <input type="radio" name="quiz_type" id="quiz1" hidden />
+                    <label for="quiz1">
+                      <div class="quiz-answer">
+                        <img src="./media/icons/icon1.png" alt="" class="danger-image" />
+                        <img src="./media/icons/white-plan.png" alt="" class="white-image" />
+                        <div class="text">Banking & Finance</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="select-option">
+                    <input type="radio" name="quiz_type" id="quiz2" hidden />
+                    <label for="quiz2">
+                      <div class="quiz-answer">
+                        <img src="./media/icons/satellite.png" alt="" class="danger-image" />
+                        <img src="./media/icons/white-satellite.png" alt="" class="white-image" />
+                        <div class="text">Telecoms & Utilities</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="select-option">
+                    <input type="radio" name="quiz_type" id="quiz3" hidden />
+                    <label for="quiz3">
+                      <div class="quiz-answer">
+                        <img src="./media/icons/bank.png" alt="" class="danger-image" />
+                        <img src="./media/icons/white-bank.png" alt="" class="white-image" />
+                        <div class="text">Government & Infrastructure</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="select-option">
+                    <input type="radio" name="quiz_type" id="quiz4" hidden />
+                    <label for="quiz4">
+                      <div class="quiz-answer">
+                        <img src="./media/icons/red-telephone.png" alt="" class="danger-image" />
+                        <img src="./media/icons/white-telephone.png" alt="" class="white-image" />
+                        <div class="text">Debt Collection Agency</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="select-option">
+                    <input type="radio" name="quiz_type" id="quiz5" hidden />
+                    <label for="quiz5">
+                      <div class="quiz-answer">
+                        <img src="./media/icons/red-peoples.png" alt="" class="danger-image" />
+                        <img src="./media/icons/white-peoples.png" alt="" class="white-image" />
+                        <div class="text">B2B organisation</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="chat-item">
+                  <div class="chat-icon">
+                    <img src="./media/icons/chat.png" />
+                  </div>
+                  <div class="chat-content">
+                    Great! Now let’s talk size… <br/>
+                    <strong>How many accounts would you have in collections or past due in an average month?</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-lg-3 mb-lg-9">
+              <div class="col-xl-5"></div>
+              <div class="col-xl-7 d-flex justify-content-end">
+                <div class="quiz-checkboxes">
+                  <div class="text-muted font-size-sm">Select an option below</div>
+                  <div class="select-options">
+                    <div class="select-option">
+                      <input type="radio" name="quiz_number" hidden id="number1" />
+                      <label for="number1">
+                        <div class="quiz-number">
+                          Up to 1000
+                        </div>
+                      </label>
+                    </div>
+                    <div class="select-option">
+                      <input type="radio" name="quiz_number" hidden id="number2" />
+                      <label for="number2">
+                        <div class="quiz-number">
+                          1000 - 10,000
+                        </div>
+                      </label>
+                    </div>
+                    <div class="select-option">
+                      <input type="radio" name="quiz_number" hidden id="number3" />
+                      <label for="number3">
+                        <div class="quiz-number">
+                          10,000 +
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="chat-item">
+                  <div class="chat-icon">
+                    <img src="./media/icons/chat.png" />
+                  </div>
+                  <div class="chat-content">
+                      We’ve got the product to handle that! <br/>
+                    <strong>Do you need detailed, automated workflows to manage your communications?</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-lg-3 mb-lg-9">
+              <div class="col-xl-7"></div>
+              <div class="col-xl-5 d-flex justify-content-end">
+                <div class="quiz-checkboxes">
+                  <div class="text-muted font-size-sm">Select an option below</div>
+                  <div class="select-options">
+                    <div class="select-option">
+                      <input type="radio" name="quiz_button1" id="button1" hidden />
+                      <label for="button1">
+                        <div class="quiz-button">Yes</div>
+                      </label>
+                    </div>
+                    <div class="select-option">
+                      <input type="radio" name="quiz_button1" id="button2" hidden />
+                      <label for="button2">
+                        <div class="quiz-button">No</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="chat-item">
+                  <div class="chat-icon">
+                    <img src="./media/icons/chat.png" />
+                  </div>
+                  <div class="chat-content">
+                      We’ve got the product to handle that! <br/>
+                    <strong>Do your contact channels have to be able to negotiate with your customers to achieve an outcome?</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-lg-3 mb-lg-9">
+              <div class="col-xl-7"></div>
+              <div class="col-xl-5 d-flex justify-content-end">
+                <div class="quiz-checkboxes">
+                  <div class="text-muted font-size-sm">Select an option below</div>
+                  <div class="select-options">
+                    <div class="select-option">
+                      <input type="radio" name="quiz_button2" id="button3" hidden />
+                      <label for="button3">
+                        <div class="quiz-button">Yes</div>
+                      </label>
+                    </div>
+                    <div class="select-option">
+                      <input type="radio" name="quiz_button2" id="button4" hidden />
+                      <label for="button4">
+                        <div class="quiz-button">No</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="chat-item">
+                  <div class="chat-icon">
+                    <img src="./media/icons/chat.png" />
+                  </div>
+                  <div class="chat-content">
+                      We’ve got the product to handle that! <br/>
+                    <strong>Will you use your businesses Payment Portal or the Credibot Payment Portal?</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-lg-3 mb-lg-9">
+              <div class="col-xl-7"></div>
+              <div class="col-xl-5 d-flex justify-content-end">
+                <div class="quiz-checkboxes">
+                  <div class="text-muted font-size-sm">Select an option below</div>
+                  <div class="select-options">
+                    <div class="select-option">
+                      <input type="radio" name="quiz_button3" id="button5" hidden />
+                      <label for="button5">
+                        <div class="quiz-button">Yes</div>
+                      </label>
+                    </div>
+                    <div class="select-option">
+                      <input type="radio" name="quiz_button3" id="button6" hidden />
+                      <label for="button6">
+                        <div class="quiz-button">No</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="chat-item">
+                  <div class="chat-icon d-none d-lg-block">
+                    <img src="./media/icons/chat.png" />
+                  </div>
+                  <div class="chat-content contact-form">
+                    <h4 class="text-center mb-4">The best product for you is</h4>
+                    <div class="credibot-card text-center mb-4">
+                      <img class="credibot-logo" src="./media/credibot-logo-express.png" />
+                      <button type="button" class="d-block d-lg-none btn btn-block btn-snow">
+                        Learn more
+                      </button>
+                    </div>
+                    <div class="font-family-OpenSans text-center mb-4 px-3">
+                      Simply enter your details below and one of our customer service representatives will be in touch shortly to help get you set up with CrediBot Express.
+                    </div>
+                    <form>
+                      <div class="d-flex w-100">
+                        <div class="form-group mr-3 w-25">
+                          <label for="title">
+                            Title
+                          </label>
+                          <select name="title" class="form-control custom-select">
+                            <option>Mr</option>
+                            <option>Miss</option>
+                          </select>
+                        </div>
+                        <div class="form-group w-75">
+                          <label for="first_name">
+                            Firstname
+                          </label>
+                          <input type="text" name="first_name" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="last_name">Lastname</label>
+                        <input type="text" name="last_name" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="company_name">Company name</label>
+                        <input type="text" name="company_name" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="abn_acn">ABN/ACN</label>
+                        <input type="text" name="abn_acn" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="product">Product</label>
+                        <select name="product" class="form-control custom-select">
+                          <option>Credibot Express</option>
+                          <option>Credibot Enterprise</option>
+                          <option>Credibot</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="comments">Additional comments</label>
+                        <textarea type="textarea" rows="4" name="comments" class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-pink btn-block">Submit for a call back</button>
+                      </div>
+                    </form>
+                    <div class="description">
+                      By submitting your details, you authorise Equifax to collect, hold, use and/or disclose your personal information for the primary purpose of contacting you in relation to the Credibot products and services, and other Equifax products and services which we consider may be of interest to you/your business, given the nature of your enquiry.  You acknowledge and agree that Equifax otherwise collects, holds, uses and/or discloses your personal information as detailed in Equifax’s Privacy Policy available at <a href="https://www.equifax.com.au/privacy" class="text-pink">www.equifax.com.au/privacy</a>.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-bottom d-none d-lg-block">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <h4 class="section-title text-white">So far the best product for your organisaiton is</h4>
+                <div class="section-content text-white font-family-OpenSans font-size-sm">But keep asnwering and we’ll refine your result</div>
+              </div>
+              <div class="col-lg-3">
+                <img class="w-100" src="./media/white-logo-enterprise.png" />
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-snow">Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-footer">
+          <div class="container">
+            <div class="footer-logo">
+              <a href="./index.html">
+                <img src="./media/white-logo.png" />
+              </a>
+            </div>
+            <div class="footer-content d-flex justify-content-between align-items-center">
+              <div class="footer-left">
+                <div class="footer-content text-white">
+                  <p>Copyright 2019 Equifax Pty Ltd. , a wholly owned subsidiary of Equifax Inc. All rights reserved. Equifax and EFX are registered trademarks of Equifax Inc.</p>
+                </div>
+              </div>
+              <div class="footer-right">
+                <ul class="footer-menu">
+                  <li>
+                    <a href="https://www.equifax.com.au/privacy">Privacy</a>
+                  </li>
+                  <li>
+                    <a href="#">Cookies</a>
+                  </li>
+                  <li>
+                    <a href="#">Credit Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Credit & identity Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Business Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Legal</a>
+                  </li>
+                  <li>
+                    <a href="#">Notices</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-bottom d-flex flex-wrap align-items-center text-white">
+              <div>Other Equifax services</div>
+              <ul class="footer-icons">
+                <li>
+                  <img src="./media/footer-icons/check.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/card.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/lock.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/home.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/snipe.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/verify.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/bce.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/home-02.png" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>

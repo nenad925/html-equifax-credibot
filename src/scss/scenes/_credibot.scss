@@ -1,0 +1,179 @@
+.credibot-page {
+  .two-column-hero {
+    padding-top: 8.75em;
+    padding-bottom: 12.25em;
+    .row {
+      align-items: center;
+    }
+    .sub-title {
+      font-size: $font-size-base * 1.75;
+      line-height: 36px;
+    }
+    .product-image {
+      width: 317px;
+      height: auto;
+      margin-bottom: 2em;
+    }
+    .featured-video {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @include media-breakpoint-down('md') {
+      padding-top: 3.5em;
+      padding-bottom: 4.25em;
+      .row {
+        text-align: center;
+        .sub-title {
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: $font-size-xl;
+          margin-bottom: 2.9375em;
+        }
+        .product-image {
+          margin-left: auto;
+          margin-right: auto;
+          width: 256px;
+        }
+      }
+    }
+  }
+  .section-main {
+    padding-top: 6.875em;
+    padding-bottom: 5.75em;
+    background-color: $white;
+    .sub-text {
+      font-size: $font-size-sm;
+      font-family: $font-family-OpenSans;
+      text-align: center;
+      font-weight: $font-weight-bolder;
+      margin-bottom: 0.5em;
+    }
+    .section-title {
+      max-width: 610px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4.6875em;
+      text-align: center;
+      line-height: 36px;
+    }
+    .collection-image {
+      width: 100%;
+      height: auto;
+    }
+    .collection-content {
+      padding: 2em;
+      .collection-sub-title {
+        font-size: $font-size-lg;
+        margin-bottom: 1.5em;
+      }
+      .collection-sub-content {
+        font-family: $font-family-OpenSans;
+        margin-bottom: 0;
+      }
+    }
+    .setup-simple {
+      margin-top: 8.5em;
+      margin-bottom: 8.625em;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .setup-title {
+        font-size: $font-size-base * 1.75;
+      }
+      .setup-content {
+        font-family: $font-family-OpenSans;
+      }
+    }
+    .report-chart {
+      margin-top: 8.5em;
+      margin-bottom: 5.625em;
+      .report-chart-title {
+        font-size: $font-size-base * 1.75;
+      }
+      .report-chart-content {
+        font-family: $font-family-OpenSans;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .report-status {
+      border-radius: 3px;
+      border: 1px solid $gray-200;
+      display: flex;
+      margin-bottom: 5.625em;
+      .report-icon {
+        background-color: $danger;
+        padding: 1.125em 1.8125em;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        img {
+          width: 55px;
+          height: auto;
+        }
+      }
+      .report-status-content {
+        background-color: $gray-100;
+        padding: 1.125em 1.5em;
+        font-size: $font-size-lg;
+        line-height: 28px;
+      }
+    }
+    .quiz-icon {
+      margin-top: 5em;
+      margin-bottom: 1.5em;
+      width: 127px;
+      height: auto;
+    }
+    .question {
+      max-width: 754px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include media-breakpoint-down('md') {
+      padding-top: 3.5em;
+      padding-bottom: 5em;
+      .section-title {
+        margin-bottom: 2.5em;
+      }
+      .collection-image {
+        padding-top: 2em;
+      }
+      .collection-content {
+        padding: 2em 0;
+        text-align: center;
+      }
+      .setup-simple {
+        margin-top: 4.5em;
+        margin-bottom: 5.5em;
+        .setup-title {
+          text-align: center;
+        }
+        .setup-content {
+          text-align: center;
+          margin-bottom: 2.5em;
+        }
+      }
+      .report-chart {
+        margin-top: 4.5em;
+        margin-bottom: 42.75em;
+        flex-wrap: wrap-reverse;
+        .report-chart-title {
+          font-size: $font-size-base * 1.625;
+        }
+      }
+      .report-status {
+        margin-bottom: 2.5em;
+      }
+      .quiz-icon {
+        margin-top: 3.4375em;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

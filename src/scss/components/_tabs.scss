@@ -1,0 +1,75 @@
+.nav {
+  &.nav-tabs {
+    list-style: none;
+    padding-left: 0;
+    border-bottom: none;
+    li {
+      border-bottom: 2px solid rgba($secondary, 0.3);
+      @include media-breakpoint-down('md') {
+        max-width: 465px;
+        margin: 0 auto;
+        width: 100%;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      a {
+        padding: 1.75em 0;
+        display: flex;
+        align-items: center;
+        font-size: $font-size-base * 1.25;
+        opacity: 0.3;
+        color: $gray-900;
+        line-height: 25px;
+        width: 100%;
+        @include media-breakpoint-down('xs') {
+          font-size: $font-size-base;
+          padding: 1em 0;
+        }
+        .number {
+          font-weight: $font-weight-bolder;
+          font-family: $font-family-OpenSans;
+          margin-right: 1em;
+          width: 48px;
+          height: 48px;
+          border-radius: 48px;
+          border: 1px solid $secondary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $secondary;
+          @include media-breakpoint-down('xs') {
+            width: 31px;
+            height: 31px;
+          }
+        }
+        span {
+          // width: 100%;
+          max-width: 376px;
+          @include media-breakpoint-down('xs') {
+            max-width: 270px;
+          }
+        }
+        &.active {
+          opacity: 1;
+          .number {
+            color: $white;
+            background-image: linear-gradient(to right,$success,$primary);
+            border: none;
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down('md') {
+      margin-bottom: 2em;
+    }
+  }
+}
+
+.tab-content>.tab-pane {
+  display: none;
+}
+
+.tab-content>.active {
+  display: block;
+}

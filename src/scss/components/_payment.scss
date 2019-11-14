@@ -1,0 +1,83 @@
+.payment-card {
+  font-family: $font-family-Circular;
+  border: 1px solid $gray-200;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  padding: 2.3125em 1.5em;
+  background-color: $gray-100;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media-breakpoint-down('xs') {
+    max-width: 320px;
+  }
+  .payment-text {
+    color: $secondary;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    margin-bottom: 0.625em;
+  }
+  .price {
+    color: $secondary;
+    font-size: $font-size-base * 2;
+    font-weight: $font-weight-bold;
+    line-height: 0.5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 1.875em;
+    span {
+      font-size: $font-size-base * 4.75;
+    }
+  }
+  .price-slider-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6875em;
+    input {
+      width: 100%;
+      max-width: 190px;
+    }
+    .price-control {
+      border-radius: 5px;
+      background-color: $gray-600;
+      border: 1px solid #97A0AF;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 18px;
+        height: auto;
+      }
+    }
+  }
+  .btn-group {
+    justify-content: center;
+    width: 100%;
+    .btn {
+      border-radius: 45px;
+      font-weight: $font-weight-bold;
+      font-family: $font-family-Circular;
+      &.btn-secondary {
+        position: relative;
+        z-index: 2;
+        border-top-right-radius: 45px;
+        border-bottom-right-radius: 45px;
+        width: 50%;
+      }
+      &.btn-light {
+        position: relative;
+        z-index: 1;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        color: #8993A4;
+        width: 60%;
+        margin-left: -1.875em;
+      }
+    }
+  }
+}

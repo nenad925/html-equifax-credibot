@@ -1,0 +1,180 @@
+.features-page {
+  .contact-method-card {
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    margin-bottom: 2em;
+    @include media-breakpoint-down('sm') {
+      margin-bottom: 1.375em;
+      font-size: $font-size-base * 0.6875;
+      .press-more {
+        font-size: $font-size-base * 0.5;
+      }
+    }
+    .card-header {
+      background-color: $gray-200;
+      padding: 0.6875em 1em;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      color: rgba($gray-900, .6);
+      .contact-method-icon {
+        display: flex;
+        align-items: center;
+        .contact-icon {
+          margin-right: 0.625em;
+          width: 28px;
+          height: 28px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          img {
+            width: 14px;
+            height: auto;
+          }
+          
+        }
+      }
+    }
+    .card-body {
+      padding: 0.6875em 1.125em;
+      .contact-method-title {
+        font-weight: $font-weight-bolder;
+      }
+      .press-more {
+        opacity: 0.6;
+      }
+    }
+  }
+  .icon {
+    width: 60px;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  .column-featured {
+    width: 100%;
+    height: auto;
+  }
+  @include media-breakpoint-down('md') {
+    .column-title {
+      font-size: $font-size-base * 1.875;
+    }
+  }
+  .features-hero {
+    padding-top: 10.4375em;
+    padding-bottom: 12.125em;
+    background-image: url('../../media/features-background.png');
+    background-size: cover;
+    background-position: 78%;
+    .hero-content {
+      max-width: 418px;
+    }
+    @include media-breakpoint-down('md') {
+      padding-top: 3.0625em;
+      padding-bottom: 3.4375em;
+    }
+    @include media-breakpoint-down('xs') {
+      .hero-content {
+        max-width: 250px;
+      }
+    }
+  }
+  .two-column-introduction {
+    padding-top: 10.3125em;
+    padding-bottom: 15.25em;
+    .row {
+      &:first-child {
+        margin-bottom: 10.3125em;
+      }
+    }
+    @include media-breakpoint-down('md') {
+      padding-top: 4em;
+      padding-bottom: 4.5em;
+      .row {
+        &:first-child {
+          margin-bottom: 4.5em;
+        }
+      }
+    }
+  }
+  .two-column-branding {
+    padding-top: 6.875em;
+    padding-bottom: 7.3125em;
+    .column-content {
+      max-width: 374px;
+    }
+    @include media-breakpoint-down('md') {
+      padding-bottom: 4.5em;
+      
+      .column-content {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .two-column-contact-method {
+    background-color: #EEF3F6;
+    padding-top: 7.125em;
+    padding-bottom: 6.25em;
+  }
+  .two-column-daily-reporting {
+    padding-top: 12.1875em;
+    @include media-breakpoint-down('md') {
+      padding-top: 4.5em;
+    }
+  }
+  .column-features {
+    padding-top: 13.125em;
+    @include media-breakpoint-down('xs') {
+      padding-top: 5.5em;
+    }
+    .feature-title {
+      font-size: $font-size-base * 1.625;
+      text-align: center;
+      line-height: 1;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      white-space: nowrap;
+      margin-bottom: 9.625em;
+      padding: 0 1.25em;
+      span {
+        width: 20%;
+        height: 2px;
+        border-radius: 1px;
+        background-color: rgba($secondary, 0.3);
+      }
+      @include media-breakpoint-down('lg') {
+        span {
+          width: 15%;
+        }
+      }
+      @include media-breakpoint-down('md') {
+        span {
+          width: 5%;
+        }
+      }
+      @include media-breakpoint-down('sm') {
+        white-space: initial;
+        margin-bottom: 8.4375em;
+        padding: 0;
+        span {
+          width: 25%;
+          margin-top: 1.25em;
+        }
+      }
+      @include media-breakpoint-down('xs') {
+        span {
+          width: 30%;
+          margin-top: 2.5em;
+          &:first-child {
+            margin-left: -1.25em;
+          }
+          &:last-child {
+            margin-right: -1.25em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Equifax Credibot</title>
+    <link href="./app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="site">
+      <div class="features-page">
+        <div class="site-header">
+          <div class="header-top">
+            <div>
+              Did you receive a communication about a debt you owe?
+              <a href="#" class="font-weight-bold text-underline"> Take care of your account</a>
+            </div>
+          </div>
+          <div class="navbar navbar-expand-lg">
+            <div class="navbar-heading d-flex align-items-center">
+              <a href="./index.html">
+                <img src="./media/equifax-white-logo.png" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar_main">
+              <ul class="navbar-nav ml-auto">
+                <li id="has-submenu" class="nav-item">
+                  <a href="./comparison.html" class="nav-link" id="collapse-menu" data-target="#submenu" aria-controls="submenu" data-toggle="collapse" aria-haspopup="true" aria-expanded="false">Products</a>
+                  <ul class="nav-submenu collapse" id="submenu" aria-labelledby="collapse-menu" data-parent="#has-submenu">
+                    <li class="nav-item">
+                      <a href="./comparison.html" class="nav-sublink">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./credibot-express.html" class="nav-sublink">CrediBot express</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./credibot.html" class="nav-sublink">CrediBot</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./credibot-enterprise.html" class="nav-sublink">CrediBot Enterprise</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="./features.html" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item btn-link">
+                  <button class="btn btn-snow mr-4" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+                </li>
+                <li class="nav-item btn-link">
+                  <button type="button" class="btn btn-snow" data-toggle="modal" data-target="#loginModal">Business login</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal fade contact-modal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <img src="./media/icons/close2.png" />
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="title mb-2">Get started now</h4>
+                  <p class="sub-text mb-5">Enter your details for a representative to get in touch with you.</p>
+                  <form>
+                    <div class="d-flex w-100">
+                      <div class="form-group mr-3 w-25">
+                        <label for="title">
+                          Title
+                        </label>
+                        <select name="title" class="form-control custom-select">
+                          <option>Mr</option>
+                          <option>Miss</option>
+                        </select>
+                      </div>
+                      <div class="form-group w-75">
+                        <label for="first_name">
+                          Firstname
+                        </label>
+                        <input type="text" name="first_name" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="last_name">Lastname</label>
+                      <input type="text" name="last_name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input type="tel" name="phone" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="company_name">Company name</label>
+                      <input type="text" name="company_name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="abn_acn">ABN/ACN</label>
+                      <input type="text" name="abn_acn" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="product">Product</label>
+                      <select name="product" class="form-control custom-select">
+                        <option>Credibot Express</option>
+                        <option>Credibot Enterprise</option>
+                        <option>Credibot</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="comments">Additional comments</label>
+                      <textarea type="textarea" rows="4" name="comments" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-pink btn-block">Submit for a call back</button>
+                    </div>
+                  </form>
+                  <div class="description">
+                    By submitting your details, you authorise Equifax to collect, hold, use and/or disclose your personal information for the primary purpose of contacting you in relation to the Credibot products and services, and other Equifax products and services which we consider may be of interest to you/your business, given the nature of your enquiry.  You acknowledge and agree that Equifax otherwise collects, holds, uses and/or discloses your personal information as detailed in Equifax’s Privacy Policy available at <a href="https://www.equifax.com.au/privacy" class="text-pink">www.equifax.com.au/privacy</a>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <img src="./media/icons/close2.png" />
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="title text-center">Which product would you like to login to?</h4>
+                  <div class="login-cards">
+                    <div class="credibot-card mr-lg-4">
+                      <img class="logo" src="./media/credibot-logo-express.png" />
+                      <div class="text-center">
+                        <button type="button" class="btn btn-snow text-dark">
+                          <img src="./media/icons/lock.png" />
+                          Login
+                        </button>
+                      </div>
+                    </div>
+                    <div class="credibot-card">
+                      <img class="logo" src="./media/credibot-logo.png" />
+                      <div class="text-center">
+                        <button type="button" class="btn btn-snow text-dark">
+                          <img src="./media/icons/lock.png" />
+                          Login
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features-hero">
+          <div class="container">
+            <div class="hero-content">
+              <h2 class="hero-title h4 h2-md mb-3">CrediBot is built to streamline your debt collection processes</h2>
+              <div class="font-family-OpenSans">With powerful features, enterprise security and payment integration, CrediBot will empower your company to collect better.</div>
+            </div>
+          </div>
+        </div>
+        <div class="two-column-introduction">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-4 text-center text-lg-left">
+                <img src="./media/icons/payment-plans.png" alt="" class="icon mt-5" />
+                <h2 class="column-title">Payment plans</h2>
+                <div class="column-content font-family-OpenSans mb-5">When your customers can take control of their repayments, they are more likely to commit. CrediBot gives them interactive tools to negotiate an optimised plan with flexibile payment amounts and dates to suit their needs while still meeting your policy requirements.</div>
+              </div>
+              <div class="col-lg-2"></div>
+              <div class="col-lg-5">
+                <img src="./media/payment-plans.png" alt="" class="column-featured" />
+              </div>
+            </div>
+            <div class="row align-items-center flex-wrap-reverse">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-5">
+                <img src="./media/credibot-card.png" alt="" class="column-featured" />
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-4 text-center text-lg-left">
+                <img src="./media/icons/clock.png" alt="" class="icon" />
+                <h2 class="column-title">Instant payments</h2>
+                <div class="column-content font-family-OpenSans mb-5">With integrated payment gateways, you're automatically set up to accept payments instantly from your customers.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two-column-image">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 px-md-8">
+                <div class="column-batch">
+                  <img src="./media/icons/padlock.png" alt="icon-padlock" />
+                </div>
+                <h2 class="h4 h2-md text-white">Safe and secure</h2>
+                <p class="font-family-OpenSans text-white">CrediBot has been designed with security in mind. All your data and your customers’ data is encrypted end-to-end, and complies with the highest security standards to give you complete peace of mind.</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="column-image">
+                  <div>
+                    <img src="./media/iphone_x.png" alt="iphone-x" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two-column-branding">
+          <div class="container">
+            <div class="row align-items-center flex-wrap-reverse mb-0">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-5">
+                <img src="./media/branding.png" alt="" class="column-featured" />
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-5 text-center text-lg-left">
+                <img src="./media/icons/branding.png" alt="" class="icon" />
+                <h2 class="column-title">Customised branding</h2>
+                <div class="column-content font-family-OpenSans mb-5">All CrediBot products allow you to integrate your company’s brand so that your customers are assured that it’s you they’re communicating with.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two-column-contact-method">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-4 text-center text-lg-left">
+                <img src="./media/icons/paper-plane.png" alt="" class="icon" />
+                <h2 class="column-title">SMS, Email, Postal Mail and Interactive Voice Calls</h2>
+                <div class="column-content font-family-OpenSans mb-4">Your customers will be automatically contacted via one or more channels, including SMS and Email to provide them with simple clickable links to make payments or negotiate arrangements right away. IVR and Direct Mail options are also used strategically where needed.</div>
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-5">
+                <div class="contact-method-card">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <div class="contact-method-icon">
+                      <div class="contact-icon bg-secondary">
+                        <img src="./media/icons/sms.png" />
+                      </div>
+                      SMS
+                    </div>
+                    <div class="time">now</div>
+                  </div>
+                  <div class="card-body">
+                    <div class="contact-method-title">Collect Pty Ltd</div>
+                    <div class="contact-method-description">Please pay your bill at <a href="https://www.credibot.com.au" class="text-success text-underline">www.credibot.com.au</a></div>
+                    <div class="press-more">Press for more</div>
+                  </div>
+                </div>
+                <div class="contact-method-card">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <div class="contact-method-icon">
+                      <div class="contact-icon bg-success">
+                        <img src="./media/icons/email.png" />
+                      </div>
+                      EMAIL
+                    </div>
+                    <div class="time">15 mins ago</div>
+                  </div>
+                  <div class="card-body">
+                    <div class="contact-method-title">Collect Pty Ltd</div>
+                    <div class="contact-method-description">You have an overdue account please pay your bill…</div>
+                    <div class="press-more">Press for more</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two-column-daily-reporting">
+          <div class="container">
+            <div class="row align-items-center flex-wrap-reverse">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-5">
+                <img src="./media/daily-reporting.png" alt="" class="column-featured">
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-4 text-center text-lg-left">
+                <img src="./media/icons/daily-reporting.png" alt="" class="icon" />
+                <h2 class="column-title">Daily reporting</h2>
+                <div class="column-content font-family-OpenSans mb-4">Track your results with up to the minute reports available 24/7 via client portal. Test and optimise your conversion and commitment rates using smart analytics tools.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-features">
+          <div class="container">
+            <div class="feature-title">
+              <span></span>
+              Choose which CrediBot product is right for you
+              <span></span>
+            </div>
+          </div>
+          <div class="section-features">
+            <div class="container">
+              <div class="feature-content d-none d-lg-block">
+                <div class="feature-table">
+                  <div class="feature-column">
+                    <div class="column-header">
+                      <div class="text-center"><img src="./media/credibot-logo-express.png" /></div>
+                      <div class="text-center"><a href="./credibot-express.html" class="btn btn-snow">Get started</a></div>
+                    </div>
+                    <div class="column-body">
+                      <h3 class="text-center">5,000</h3>
+                      <div class="column-subtitle text-center">
+                        Active Accounts (maximum) per month
+                      </div>
+                      <hr />
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Instant payment</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Payment plans</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Payment Gateway Integration</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Company Branding</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Email & SMS Comms</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Daily Reporting</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Customer AI Negotitation</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Postal Mail</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Interactive Voice Calls</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Trust Account Processing Option</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Multi-user role based access</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Fully Customisable Templates</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Automated Campaign Workflow</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Stand alone instance</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Project managed delivery and integration</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Customised decision trees</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feature-column best-highlight">
+                    <div class="best-value">
+                      Most popular<small>*</small>
+                    </div>
+                    <div class="column-header">
+                      <div class="text-center"><img src="./media/credibot-logo.png" /></div>
+                      <div class="text-center"><a href="./credibot.html" class="btn btn-snow">Get started</a></div>
+                    </div>
+                    <div class="column-body">
+                      <h3 class="text-center">100,000</h3>
+                      <div class="column-subtitle text-center">
+                        Active Accounts (maximum) per month
+                      </div>
+                      <hr />
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Instant payment</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Payment plans</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Payment Gateway Integration</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Company Branding</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Email & SMS Comms</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Daily Reporting</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Customer AI Negotitation</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Postal Mail</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Interactive Voice Calls</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Trust Account Processing Option</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Multi-user role based access</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Fully Customisable Templates</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Automated Campaign Workflow</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Stand alone instance</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Project managed delivery and integration</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/close.png" />
+                        </div>
+                        <span>Customised decision trees</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feature-column">
+                    <div class="column-header">
+                      <div class="text-center"><img src="./media/credibot-logo-enterprise.png" /></div>
+                      <div class="text-center"><a href="./credibot-enterprise.html" class="btn btn-snow">Get started</a></div>
+                    </div>
+                    <div class="column-body">
+                      <h3 class="text-center">Unlimited</h3>
+                      <div class="column-subtitle text-center">
+                        Active Accounts (maximum) per month
+                      </div>
+                      <hr />
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Instant payment</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Payment plans</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Payment Gateway Integration</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Company Branding</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Email & SMS Comms</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Daily Reporting</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Customer AI Negotitation</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Postal Mail</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Interactive Voice Calls</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Trust Account Processing Option</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Multi-user role based access</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Fully Customisable Templates</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Automated Campaign Workflow</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Stand alone instance</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Project managed delivery and integration</span>
+                      </div>
+                      <div class="feature-item">
+                        <div>
+                          <img src="./media/icons/check.png" />
+                        </div>
+                        <span>Customised decision trees</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-bottom">
+                  <div class="question">
+                    <img src="./media/icons/ask.png" />
+                    Not sure which version of CrediBot suits you?
+                  </div>
+                  <a href="./simple-quiz-chat.html" class="btn btn-snow">Take our quiz</a>
+                </div>
+                <div class="feature-small-text text-center">
+                  *Based off Equifax use cases and customer experience. 
+                </div>
+                <h2 class="text-center text-white mb-4">Could CrediBot improve your collections performance, customer satisfaction and lower your overheads?</h2>
+                <div class="feature-medium-text text-center">One of our friendly team will be happy to help you.</div>
+                <div class="text-center"><button class="btn btn-snow mr-4" data-toggle="modal" data-target="#contactModal">Contact Us</button></div>
+              </div>
+              <div class="feature-content d-block d-lg-none">
+                <app-carousel class="feature-table">
+                  <div class="carousel w-100" id="slick-carousel">
+                    <div class="feature-column slick-item">
+                      <div class="column-header">
+                        <div class="text-center"><img src="./media/credibot-logo-express.png" /></div>
+                        <div class="text-center"><a href="./credibot-express.html" class="btn btn-snow">Get started</a></div>
+                      </div>
+                      <div class="column-body">
+                        <h3 class="text-center">5,000</h3>
+                        <div class="column-subtitle text-center">
+                          Active Accounts (maximum) per month
+                        </div>
+                        <hr />
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Instant payment</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Payment plans</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Payment Gateway Integration</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Company Branding</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Email & SMS Comms</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Daily Reporting</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Customer AI Negotitation</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Postal Mail</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Interactive Voice Calls</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Trust Account Processing Option</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Multi-user role based access</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Fully Customisable Templates</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Automated Campaign Workflow</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Stand alone instance</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Project managed delivery and integration</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Customised decision trees</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feature-column best-highlight slick-item">
+                      <div class="best-value">
+                        Most popular<small>*</small>
+                      </div>
+                      <div class="column-header">
+                        <div class="text-center"><img src="./media/credibot-logo.png" /></div>
+                        <div class="text-center"><a href="./credibot.html" class="btn btn-snow">Get started</a></div>
+                      </div>
+                      <div class="column-body">
+                        <h3 class="text-center">100,000</h3>
+                        <div class="column-subtitle text-center">
+                          Active Accounts (maximum) per month
+                        </div>
+                        <hr />
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Instant payment</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Payment plans</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Payment Gateway Integration</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Company Branding</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Email & SMS Comms</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Daily Reporting</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Customer AI Negotitation</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Postal Mail</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Interactive Voice Calls</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Trust Account Processing Option</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Multi-user role based access</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Fully Customisable Templates</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Automated Campaign Workflow</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Stand alone instance</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Project managed delivery and integration</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/close.png" />
+                          </div>
+                          <span>Customised decision trees</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feature-column slick-item">
+                      <div class="column-header">
+                        <div class="text-center"><img src="./media/credibot-logo-enterprise.png" /></div>
+                        <div class="text-center"><a href="./credibot-enterprise.html" class="btn btn-snow">Get started</a></div>
+                      </div>
+                      <div class="column-body">
+                        <h3 class="text-center">Unlimited</h3>
+                        <div class="column-subtitle text-center">
+                          Active Accounts (maximum) per month
+                        </div>
+                        <hr />
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Instant payment</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Payment plans</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Payment Gateway Integration</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Company Branding</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Email & SMS Comms</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Daily Reporting</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Customer AI Negotitation</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Postal Mail</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Interactive Voice Calls</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Trust Account Processing Option</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Multi-user role based access</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Fully Customisable Templates</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Automated Campaign Workflow</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Stand alone instance</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Project managed delivery and integration</span>
+                        </div>
+                        <div class="feature-item">
+                          <div>
+                            <img src="./media/icons/check.png" />
+                          </div>
+                          <span>Customised decision trees</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </app-carousel>
+                <div class="feature-small-text text-center">
+                  *Based off Equifax use cases and customer experience. 
+                </div>
+                <div class="feature-bottom">
+                  <div class="question">
+                    <img src="./media/icons/ask.png" />
+                    Not sure which version of CrediBot suits you?
+                  </div>
+                  <a href="./simple-quiz-chat.html" class="btn btn-snow">Take our quiz</a>
+                </div>
+                <h3 class="text-center text-white mb-4">Could CrediBot improve your collections performance, customer satisfaction and lower your overheads?</h3>
+                <div class="feature-medium-text text-center">One of our friendly team will be happy to help you.</div>
+                <div class="text-center"><button class="btn btn-snow mr-4" data-toggle="modal" data-target="#contactModal">Contact Us</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-footer">
+          <div class="container">
+            <div class="footer-logo">
+              <a href="./index.html">
+                <img src="./media/white-logo.png" />
+              </a>
+            </div>
+            <div class="footer-content d-flex justify-content-between align-items-center">
+              <div class="footer-left">
+                <div class="footer-content text-white">
+                  <p>Copyright 2019 Equifax Pty Ltd. , a wholly owned subsidiary of Equifax Inc. All rights reserved. Equifax and EFX are registered trademarks of Equifax Inc.</p>
+                </div>
+              </div>
+              <div class="footer-right">
+                <ul class="footer-menu">
+                  <li>
+                    <a href="https://www.equifax.com.au/privacy">Privacy</a>
+                  </li>
+                  <li>
+                    <a href="#">Cookies</a>
+                  </li>
+                  <li>
+                    <a href="#">Credit Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Credit & identity Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Business Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Legal</a>
+                  </li>
+                  <li>
+                    <a href="#">Notices</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-bottom d-flex flex-wrap align-items-center text-white">
+              <div>Other Equifax services</div>
+              <ul class="footer-icons">
+                <li>
+                  <img src="./media/footer-icons/check.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/card.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/lock.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/home.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/snipe.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/verify.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/bce.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/home-02.png" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>

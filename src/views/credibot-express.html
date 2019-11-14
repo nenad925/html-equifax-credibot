@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Equifax Credibot</title>
+    <link href="./app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="site">
+      <div class="credibot-page">
+        <div class="site-header">
+          <div class="header-top">
+            <div>
+              Did you receive a communication about a debt you owe?
+              <a href="#" class="font-weight-bold text-underline"> Take care of your account</a>
+            </div>
+          </div>
+          <div class="navbar navbar-expand-lg">
+            <div class="navbar-heading d-flex align-items-center">
+              <a href="./index.html">
+                <img src="./media/equifax-white-logo.png" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar_main">
+              <ul class="navbar-nav ml-auto">
+                <li id="has-submenu" class="nav-item">
+                  <a href="./comparison.html" class="nav-link" id="collapse-menu" data-target="#submenu" aria-controls="submenu" data-toggle="collapse" aria-haspopup="true" aria-expanded="false">Products</a>
+                  <ul class="nav-submenu collapse" id="submenu" aria-labelledby="collapse-menu" data-parent="#has-submenu">
+                    <li class="nav-item">
+                      <a href="./comparison.html" class="nav-sublink">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./credibot-express.html" class="nav-sublink">CrediBot express</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./credibot.html" class="nav-sublink">CrediBot</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./credibot-enterprise.html" class="nav-sublink">CrediBot Enterprise</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="./features.html" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item btn-link">
+                    <button class="btn btn-snow mr-4" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+                </li>
+                <li class="nav-item btn-link">
+                  <button type="button" class="btn btn-snow" data-toggle="modal" data-target="#loginModal">Business login</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal fade contact-modal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <img src="./media/icons/close2.png" />
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="title mb-2">Get started now</h4>
+                  <p class="sub-text mb-5">Enter your details for a representative to get in touch with you.</p>
+                  <form>
+                    <div class="d-flex">
+                      <div class="form-group mr-3 w-25">
+                        <label for="title">
+                          Title
+                        </label>
+                        <select name="title" class="form-control custom-select">
+                          <option>Mr</option>
+                          <option>Miss</option>
+                        </select>
+                      </div>
+                      <div class="form-group w-75">
+                        <label for="first_name">
+                          Firstname
+                        </label>
+                        <input type="text" name="first_name" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="last_name">Lastname</label>
+                      <input type="text" name="last_name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input type="tel" name="phone" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="company_name">Company name</label>
+                      <input type="text" name="company_name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="abn_acn">ABN/ACN</label>
+                      <input type="text" name="abn_acn" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="product">Product</label>
+                      <select name="product" class="form-control custom-select">
+                        <option>Credibot Express</option>
+                        <option>Credibot Enterprise</option>
+                        <option>Credibot</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="comments">Additional comments</label>
+                      <textarea type="textarea" rows="4" name="comments" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-pink btn-block">Submit for a call back</button>
+                    </div>
+                  </form>
+                  <div class="description">
+                    By submitting your details, you authorise Equifax to collect, hold, use and/or disclose your personal information for the primary purpose of contacting you in relation to the Credibot products and services, and other Equifax products and services which we consider may be of interest to you/your business, given the nature of your enquiry.  You acknowledge and agree that Equifax otherwise collects, holds, uses and/or discloses your personal information as detailed in Equifax’s Privacy Policy available at <a href="https://www.equifax.com.au/privacy" class="text-pink">www.equifax.com.au/privacy</a>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <img src="./media/icons/close2.png" />
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="title text-center">Which product would you like to login to?</h4>
+                  <div class="login-cards">
+                    <div class="credibot-card mr-lg-4">
+                      <img class="logo" src="./media/credibot-logo-express.png" />
+                      <div class="text-center">
+                        <button type="button" class="btn btn-snow text-dark">
+                          <img src="./media/icons/lock.png" />
+                          Login
+                        </button>
+                      </div>
+                    </div>
+                    <div class="credibot-card">
+                      <img class="logo" src="./media/credibot-logo.png" />
+                      <div class="text-center">
+                        <button type="button" class="btn btn-snow text-dark">
+                          <img src="./media/icons/lock.png" />
+                          Login
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two-column-hero">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5">
+                <img class="product-image" src="./media/credibot-logo-express.png" />
+                <h3 class="sub-title">CrediBot automates your collections process which may not only help increase your cure rates, but also lower your overheads; as well as improving customer experiences.</h3>
+              </div>
+              <div class="col-lg-7">
+                <div class="featured-video">
+                  <img src="./media/video-background.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-key-features">
+          <div class="container">
+            <h2 class="section-title">Key features</h2>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="key-feature">
+                  <div class="feature-image">
+                    <img src="./media/icons/instant-payment.png" />
+                  </div>
+                  <div class="feature-content">Instant payments</div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="key-feature">
+                  <div class="feature-image">
+                    <img src="./media/icons/payment-plans.png" />
+                  </div>
+                  <div class="feature-content">Payment plans</div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="key-feature">
+                  <div class="feature-image">
+                    <img src="./media/icons/payment-gateway.png" />
+                  </div>
+                  <div class="feature-content">Payment gateway integration</div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="key-feature">
+                  <div class="feature-image">
+                    <img src="./media/icons/company-branding.png" />
+                  </div>
+                  <div class="feature-content">Company branding</div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="key-feature">
+                  <div class="feature-image">
+                    <img src="./media/icons/email-sms.png" />
+                  </div>
+                  <div class="feature-content">Email & SMS comms</div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="key-feature">
+                  <div class="feature-image">
+                    <img src="./media/icons/daily-reporting.png" />
+                  </div>
+                  <div class="feature-content">Daily reporting</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-main">
+          <div class="container">
+            <div class="sub-text text-danger">CASE STUDY</div>
+            <h2 class="section-title h3 h2-md">Automation for this collections team is a huge win</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="./media/collection-01.png" alt="" class="collection-image border-top-danger border-md">
+              </div>
+              <div class="col-lg-6 border-top-danger border-bottom-danger border-lg d-flex align-items-center">
+                <div class="collection-content border-bottom-danger border-md">
+                  <h4 class="collection-sub-title">Sarah is a manager of a collections department that was using spreadsheets and manual data entry to keep track of their accounts.</h4>
+                  <p class="collection-sub-content">She decided to try out CrediBot to see if it could reduce the operational expenses of their debt collection process, as well as providing easy-to-read audits and reports for their contact strategies.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center setup-simple">
+              <div class="col-lg-4">
+                <h3 class="setup-title mb-3">Setup was simple</h3>
+                <div class="setup-content">Sarah got in touch with the Equifax Digital Collections team who were able to get her set up quickly. Once she logged in to her new account, setting up her first campaign was simple.</div>
+              </div>
+              <div class="col-lg-8">
+                <div class="setup-image">
+                  <img class="d-none d-md-block" src="./media/setup-image.png" />
+                  <img class="d-block d-md-none" src="./media/setup-image-mobile.png" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="./media/collection-02.png" alt="" class="collection-image border-top-danger border-md">
+              </div>
+              <div class="col-lg-6 border-top-danger border-bottom-danger border-lg d-flex align-items-center">
+                <div class="collection-content border-bottom-danger border-md">
+                  <h4 class="collection-sub-title">The team didn’t need to worry about complicated and in-depth technical knowledge.</h4>
+                  <p class="collection-sub-content">All CrediBot products have an inbuilt instant payment gateway so she was able to start accepting payments from customers immediately.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row report-chart">
+              <div class="col-lg-5">
+                <h3 class="report-chart-title text-md-left text-center">Sarah generated a report at the end of the week which gave her insights the team didn’t expect.</h3>
+                <p class="report-chart-content text-md-left text-center">Engagement and cure rates were better when her customers were able to self-service their account, at a time that suited them, with flexible payment options.</p>
+                <p class="report-chart-content text-md-left text-center">Not only that, but operational expenses were significantly reduced. Sarah and her CFO decided to implement CrediBot Express company-wide.</p>
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-6">
+                <div class="report-chart-image mb-4 mb-md-5">
+                  <img class="d-none d-md-block" src="./media/report-chart.png" />
+                  <img class="d-block d-md-none" src="./media/report-chart-mobile.png" />
+                </div>
+                <div class="text-right text-muted d-none d-lg-block"><small>These samples are for illustrative purposes only</small></div>
+              </div>
+            </div>
+            <h4 class="text-center mb-5 mb-md-7">Productivity increase with CrediBot Express</h4>
+            <div class="row">
+              <div class="col-lg-4 offset-lg-2">
+                <div class="report-status">
+                  <div class="report-icon">
+                    <img src="./media/icons/report-increasing.png" />
+                  </div>
+                  <div class="report-status-content">
+                    Increased productivity
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="report-status">
+                  <div class="report-icon">
+                    <img src="./media/icons/report-decreasing.png" />
+                  </div>
+                  <div class="report-status-content" style="padding-right: 3.75em">
+                    Decreased error rate
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center font-size-sm font-family-OpenSans">The case study is based on Equifax use cases and customer experience</div>
+            <div class="text-center">
+              <img src="./media/icons/quiz.png" alt="" class="quiz-icon">
+            </div>
+            <h2 class="question text-center h3 h2-md mb-5">Want to try out CrediBot Express to see how easy and effective it is?</h2>
+            <div class="text-center">
+              <a href="./credibot-express.html" class="btn btn-pink">Get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="site-footer">
+          <div class="container">
+            <div class="footer-logo">
+              <a href="./index.html">
+                <img src="./media/white-logo.png" />
+              </a>
+            </div>
+            <div class="footer-content d-flex justify-content-between align-items-center">
+              <div class="footer-left">
+                <div class="footer-content text-white">
+                  <p>Copyright 2019 Equifax Pty Ltd. , a wholly owned subsidiary of Equifax Inc. All rights reserved. Equifax and EFX are registered trademarks of Equifax Inc.</p>
+                </div>
+              </div>
+              <div class="footer-right">
+                <ul class="footer-menu">
+                  <li>
+                    <a href="https://www.equifax.com.au/privacy">Privacy</a>
+                  </li>
+                  <li>
+                    <a href="#">Cookies</a>
+                  </li>
+                  <li>
+                    <a href="#">Credit Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Credit & identity Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Business Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Legal</a>
+                  </li>
+                  <li>
+                    <a href="#">Notices</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-bottom d-flex flex-wrap align-items-center text-white">
+              <div>Other Equifax services</div>
+              <ul class="footer-icons">
+                <li>
+                  <img src="./media/footer-icons/check.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/card.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/lock.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/home.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/snipe.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/verify.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/bce.png" />
+                </li>
+                <li>
+                  <img src="./media/footer-icons/home-02.png" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>
